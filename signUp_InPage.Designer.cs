@@ -57,7 +57,7 @@
             this.uname2_tooltip = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.password2_tooltip = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonButton8 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton6 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.signIn_signinBTN = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.signIn_signUpBTN = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.signIn2BTN = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.signIn_passwordINPUT = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -110,7 +110,7 @@
             // 
             this.SignUpForm.GroupBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.FormMain;
             this.SignUpForm.GroupBorderStyle = ComponentFactory.Krypton.Toolkit.PaletteBorderStyle.FormCustom1;
-            this.SignUpForm.Location = new System.Drawing.Point(671, 37);
+            this.SignUpForm.Location = new System.Drawing.Point(671, 36);
             this.SignUpForm.Name = "SignUpForm";
             this.SignUpForm.Palette = this.kryptonPalette1;
             this.SignUpForm.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -301,6 +301,7 @@
             this.signUpBTN.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
             this.signUpBTN.TabIndex = 17;
             this.signUpBTN.Values.Text = "Sign Up";
+            this.signUpBTN.Click += new System.EventHandler(this.signUpBTN_Click);
             // 
             // signUp_usernameINPUT
             // 
@@ -527,7 +528,7 @@
             this.SignInForm.Panel.Controls.Add(this.uname2_tooltip);
             this.SignInForm.Panel.Controls.Add(this.password2_tooltip);
             this.SignInForm.Panel.Controls.Add(this.kryptonButton8);
-            this.SignInForm.Panel.Controls.Add(this.kryptonButton6);
+            this.SignInForm.Panel.Controls.Add(this.signIn_signinBTN);
             this.SignInForm.Panel.Controls.Add(this.signIn_signUpBTN);
             this.SignInForm.Panel.Controls.Add(this.signIn2BTN);
             this.SignInForm.Panel.Controls.Add(this.signIn_passwordINPUT);
@@ -612,33 +613,34 @@
             this.kryptonButton8.TabIndex = 18;
             this.kryptonButton8.Values.Text = "Sign Up";
             // 
-            // kryptonButton6
+            // signIn_signinBTN
             // 
-            this.kryptonButton6.Location = new System.Drawing.Point(68, 259);
-            this.kryptonButton6.Name = "kryptonButton6";
-            this.kryptonButton6.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.kryptonButton6.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.kryptonButton6.OverrideDefault.Content.LongText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton6.OverrideDefault.Content.LongText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton6.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton6.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton6.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton6.Size = new System.Drawing.Size(263, 54);
-            this.kryptonButton6.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.kryptonButton6.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.kryptonButton6.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.signIn_signinBTN.Location = new System.Drawing.Point(68, 259);
+            this.signIn_signinBTN.Name = "signIn_signinBTN";
+            this.signIn_signinBTN.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.signIn_signinBTN.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.signIn_signinBTN.OverrideDefault.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.signIn_signinBTN.OverrideDefault.Content.LongText.Color2 = System.Drawing.Color.White;
+            this.signIn_signinBTN.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.signIn_signinBTN.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.signIn_signinBTN.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signIn_signinBTN.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.signIn_signinBTN.Size = new System.Drawing.Size(263, 54);
+            this.signIn_signinBTN.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.signIn_signinBTN.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
+            this.signIn_signinBTN.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton6.StateCommon.Border.Rounding = 4;
-            this.kryptonButton6.StateCommon.Border.Width = 0;
-            this.kryptonButton6.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton6.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton6.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton6.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.kryptonButton6.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
-            this.kryptonButton6.TabIndex = 18;
-            this.kryptonButton6.Values.Text = "Sign In";
+            this.signIn_signinBTN.StateCommon.Border.Rounding = 4;
+            this.signIn_signinBTN.StateCommon.Border.Width = 0;
+            this.signIn_signinBTN.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.signIn_signinBTN.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.signIn_signinBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signIn_signinBTN.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            this.signIn_signinBTN.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            this.signIn_signinBTN.TabIndex = 18;
+            this.signIn_signinBTN.Values.Text = "Sign In";
+            this.signIn_signinBTN.Click += new System.EventHandler(this.signIn_signinBTN_Click);
             // 
             // signIn_signUpBTN
             // 
@@ -744,6 +746,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(654, 711);
             this.panel1.TabIndex = 17;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // close_BTN
             // 
@@ -812,7 +815,7 @@
         private System.Windows.Forms.PictureBox close_BTN;
         private ComponentFactory.Krypton.Toolkit.KryptonButton signUpBTN;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton8;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton6;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton signIn_signinBTN;
         private ComponentFactory.Krypton.Toolkit.KryptonButton signIn_signUpBTN;
         private ComponentFactory.Krypton.Toolkit.KryptonButton signIn2BTN;
         private System.Windows.Forms.Panel panel1;
