@@ -261,7 +261,13 @@ namespace TeachersClassRecord
 
         private void close_BTN_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+
+            var respond = MessageBox.Show("Are you sure you want to leave the app?", "Confirm Exit", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            if (respond == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else return;
         }
     }
 
