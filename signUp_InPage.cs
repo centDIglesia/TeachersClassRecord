@@ -286,13 +286,14 @@ namespace TeachersClassRecord
             return File.Exists(filePath);
         }
 
-        //encrypt the password in the database
+        //encrypt the password in the database(TEXTFILE)
         private string HashPassword(string password)
         {
             using (SHA256 sha256Hash = SHA256.Create())
             {
                 byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
                 StringBuilder builder = new StringBuilder();
+
                 foreach (byte b in bytes)
                 {
                     builder.Append(b.ToString("x2"));
