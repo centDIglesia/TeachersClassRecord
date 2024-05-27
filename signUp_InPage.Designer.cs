@@ -64,6 +64,7 @@
             this.signIn_usernameINPUT = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.close_BTN = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.SignUpForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SignUpForm.Panel)).BeginInit();
             this.SignUpForm.Panel.SuspendLayout();
@@ -75,6 +76,7 @@
             this.SignInForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.signIn_showPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close_BTN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonWrapLabel1
@@ -90,7 +92,7 @@
             this.signUp_fnameINPUT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.signUp_fnameINPUT.Location = new System.Drawing.Point(59, 129);
             this.signUp_fnameINPUT.Name = "signUp_fnameINPUT";
-            this.signUp_fnameINPUT.Size = new System.Drawing.Size(160, 43);
+            this.signUp_fnameINPUT.Size = new System.Drawing.Size(160, 37);
             this.signUp_fnameINPUT.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
             this.signUp_fnameINPUT.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
             this.signUp_fnameINPUT.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -99,7 +101,7 @@
             this.signUp_fnameINPUT.StateCommon.Border.Rounding = 4;
             this.signUp_fnameINPUT.StateCommon.Border.Width = 1;
             this.signUp_fnameINPUT.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.signUp_fnameINPUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp_fnameINPUT.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUp_fnameINPUT.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.signUp_fnameINPUT.TabIndex = 1;
             this.signUp_fnameINPUT.Text = "First Name";
@@ -117,6 +119,7 @@
             // 
             // SignUpForm.Panel
             // 
+            this.SignUpForm.Panel.Controls.Add(this.pictureBox1);
             this.SignUpForm.Panel.Controls.Add(this.sinUp_showPassword);
             this.SignUpForm.Panel.Controls.Add(this.school_tooltip);
             this.SignUpForm.Panel.Controls.Add(this.uname1_tooltip);
@@ -161,7 +164,7 @@
             this.kryptonPalette1.HeaderStyles.HeaderCommon.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonPalette1.InputControlStyles.InputControlCommon.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonPalette1.InputControlStyles.InputControlCommon.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // sinUp_showPassword
             // 
@@ -179,13 +182,13 @@
             // 
             this.school_tooltip.Location = new System.Drawing.Point(64, 281);
             this.school_tooltip.Name = "school_tooltip";
-            this.school_tooltip.Size = new System.Drawing.Size(50, 26);
+            this.school_tooltip.Size = new System.Drawing.Size(50, 20);
             this.school_tooltip.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.school_tooltip.StateCommon.Border.Width = 0;
             this.school_tooltip.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.school_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.school_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.school_tooltip.TabIndex = 24;
             this.school_tooltip.Text = "School";
             // 
@@ -193,13 +196,13 @@
             // 
             this.uname1_tooltip.Location = new System.Drawing.Point(64, 227);
             this.uname1_tooltip.Name = "uname1_tooltip";
-            this.uname1_tooltip.Size = new System.Drawing.Size(75, 26);
+            this.uname1_tooltip.Size = new System.Drawing.Size(75, 20);
             this.uname1_tooltip.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.uname1_tooltip.StateCommon.Border.Width = 0;
             this.uname1_tooltip.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.uname1_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uname1_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uname1_tooltip.TabIndex = 23;
             this.uname1_tooltip.Text = "Username";
             // 
@@ -207,13 +210,13 @@
             // 
             this.password1_tooltip.Location = new System.Drawing.Point(64, 362);
             this.password1_tooltip.Name = "password1_tooltip";
-            this.password1_tooltip.Size = new System.Drawing.Size(70, 26);
+            this.password1_tooltip.Size = new System.Drawing.Size(70, 20);
             this.password1_tooltip.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.password1_tooltip.StateCommon.Border.Width = 0;
             this.password1_tooltip.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.password1_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password1_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password1_tooltip.TabIndex = 22;
             this.password1_tooltip.Text = "Password";
             // 
@@ -221,13 +224,13 @@
             // 
             this.cpassword_tooltip.Location = new System.Drawing.Point(64, 418);
             this.cpassword_tooltip.Name = "cpassword_tooltip";
-            this.cpassword_tooltip.Size = new System.Drawing.Size(125, 26);
+            this.cpassword_tooltip.Size = new System.Drawing.Size(125, 20);
             this.cpassword_tooltip.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.cpassword_tooltip.StateCommon.Border.Width = 0;
             this.cpassword_tooltip.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.cpassword_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cpassword_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpassword_tooltip.TabIndex = 21;
             this.cpassword_tooltip.Text = "Confirm Password";
             // 
@@ -235,13 +238,13 @@
             // 
             this.email_tooltip.Location = new System.Drawing.Point(64, 172);
             this.email_tooltip.Name = "email_tooltip";
-            this.email_tooltip.Size = new System.Drawing.Size(45, 26);
+            this.email_tooltip.Size = new System.Drawing.Size(45, 20);
             this.email_tooltip.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.email_tooltip.StateCommon.Border.Width = 0;
             this.email_tooltip.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.email_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.email_tooltip.TabIndex = 20;
             this.email_tooltip.Text = "Email";
             // 
@@ -249,13 +252,13 @@
             // 
             this.lname_tooltip.Location = new System.Drawing.Point(231, 118);
             this.lname_tooltip.Name = "lname_tooltip";
-            this.lname_tooltip.Size = new System.Drawing.Size(75, 26);
+            this.lname_tooltip.Size = new System.Drawing.Size(75, 20);
             this.lname_tooltip.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.lname_tooltip.StateCommon.Border.Width = 0;
             this.lname_tooltip.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.lname_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lname_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lname_tooltip.TabIndex = 19;
             this.lname_tooltip.Text = "Last name";
             // 
@@ -263,13 +266,13 @@
             // 
             this.fname_tooltip.Location = new System.Drawing.Point(64, 118);
             this.fname_tooltip.Name = "fname_tooltip";
-            this.fname_tooltip.Size = new System.Drawing.Size(75, 26);
+            this.fname_tooltip.Size = new System.Drawing.Size(75, 20);
             this.fname_tooltip.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.fname_tooltip.StateCommon.Border.Width = 0;
             this.fname_tooltip.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.fname_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fname_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fname_tooltip.TabIndex = 18;
             this.fname_tooltip.Text = "First name";
             // 
@@ -284,7 +287,7 @@
             this.signUpBTN.OverrideDefault.Content.LongText.Color2 = System.Drawing.Color.White;
             this.signUpBTN.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.signUpBTN.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.signUpBTN.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpBTN.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpBTN.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.signUpBTN.Size = new System.Drawing.Size(263, 54);
             this.signUpBTN.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
@@ -296,7 +299,7 @@
             this.signUpBTN.StateCommon.Border.Width = 0;
             this.signUpBTN.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.signUpBTN.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.signUpBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpBTN.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
             this.signUpBTN.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
             this.signUpBTN.TabIndex = 17;
@@ -308,7 +311,7 @@
             this.signUp_usernameINPUT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.signUp_usernameINPUT.Location = new System.Drawing.Point(59, 238);
             this.signUp_usernameINPUT.Name = "signUp_usernameINPUT";
-            this.signUp_usernameINPUT.Size = new System.Drawing.Size(329, 43);
+            this.signUp_usernameINPUT.Size = new System.Drawing.Size(329, 37);
             this.signUp_usernameINPUT.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
             this.signUp_usernameINPUT.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
             this.signUp_usernameINPUT.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -317,7 +320,7 @@
             this.signUp_usernameINPUT.StateCommon.Border.Rounding = 4;
             this.signUp_usernameINPUT.StateCommon.Border.Width = 1;
             this.signUp_usernameINPUT.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.signUp_usernameINPUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp_usernameINPUT.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUp_usernameINPUT.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.signUp_usernameINPUT.TabIndex = 10;
             this.signUp_usernameINPUT.Text = "Username";
@@ -329,7 +332,7 @@
             this.signUp_schoolINPUT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.signUp_schoolINPUT.Location = new System.Drawing.Point(59, 292);
             this.signUp_schoolINPUT.Name = "signUp_schoolINPUT";
-            this.signUp_schoolINPUT.Size = new System.Drawing.Size(329, 43);
+            this.signUp_schoolINPUT.Size = new System.Drawing.Size(329, 37);
             this.signUp_schoolINPUT.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
             this.signUp_schoolINPUT.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
             this.signUp_schoolINPUT.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -338,7 +341,7 @@
             this.signUp_schoolINPUT.StateCommon.Border.Rounding = 4;
             this.signUp_schoolINPUT.StateCommon.Border.Width = 1;
             this.signUp_schoolINPUT.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.signUp_schoolINPUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp_schoolINPUT.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUp_schoolINPUT.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.signUp_schoolINPUT.TabIndex = 9;
             this.signUp_schoolINPUT.Text = "School";
@@ -367,7 +370,7 @@
             this.signUp_signInBTN.StateCommon.Border.Width = 1;
             this.signUp_signInBTN.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             this.signUp_signInBTN.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.signUp_signInBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp_signInBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUp_signInBTN.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             this.signUp_signInBTN.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             this.signUp_signInBTN.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -412,7 +415,7 @@
             this.signUp_clearBTN.OverrideDefault.Content.LongText.Color2 = System.Drawing.Color.White;
             this.signUp_clearBTN.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.signUp_clearBTN.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.signUp_clearBTN.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp_clearBTN.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUp_clearBTN.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.signUp_clearBTN.Size = new System.Drawing.Size(60, 54);
             this.signUp_clearBTN.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -424,7 +427,7 @@
             this.signUp_clearBTN.StateCommon.Border.Width = 0;
             this.signUp_clearBTN.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.signUp_clearBTN.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.signUp_clearBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp_clearBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUp_clearBTN.TabIndex = 7;
             this.signUp_clearBTN.Values.Text = "clear";
             // 
@@ -435,7 +438,7 @@
             this.signUp_cpasswordINPUT.Name = "signUp_cpasswordINPUT";
             this.signUp_cpasswordINPUT.Palette = this.kryptonPalette1;
             this.signUp_cpasswordINPUT.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.signUp_cpasswordINPUT.Size = new System.Drawing.Size(329, 43);
+            this.signUp_cpasswordINPUT.Size = new System.Drawing.Size(329, 37);
             this.signUp_cpasswordINPUT.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
             this.signUp_cpasswordINPUT.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
             this.signUp_cpasswordINPUT.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -455,7 +458,7 @@
             this.signUp_passwordNPUT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.signUp_passwordNPUT.Location = new System.Drawing.Point(59, 374);
             this.signUp_passwordNPUT.Name = "signUp_passwordNPUT";
-            this.signUp_passwordNPUT.Size = new System.Drawing.Size(329, 43);
+            this.signUp_passwordNPUT.Size = new System.Drawing.Size(329, 37);
             this.signUp_passwordNPUT.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
             this.signUp_passwordNPUT.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
             this.signUp_passwordNPUT.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -464,7 +467,7 @@
             this.signUp_passwordNPUT.StateCommon.Border.Rounding = 4;
             this.signUp_passwordNPUT.StateCommon.Border.Width = 1;
             this.signUp_passwordNPUT.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.signUp_passwordNPUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp_passwordNPUT.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUp_passwordNPUT.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.signUp_passwordNPUT.TabIndex = 4;
             this.signUp_passwordNPUT.Text = "Password";
@@ -476,7 +479,7 @@
             this.signUp_emailINPUT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.signUp_emailINPUT.Location = new System.Drawing.Point(59, 184);
             this.signUp_emailINPUT.Name = "signUp_emailINPUT";
-            this.signUp_emailINPUT.Size = new System.Drawing.Size(329, 43);
+            this.signUp_emailINPUT.Size = new System.Drawing.Size(329, 37);
             this.signUp_emailINPUT.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
             this.signUp_emailINPUT.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
             this.signUp_emailINPUT.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -485,7 +488,7 @@
             this.signUp_emailINPUT.StateCommon.Border.Rounding = 4;
             this.signUp_emailINPUT.StateCommon.Border.Width = 1;
             this.signUp_emailINPUT.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.signUp_emailINPUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp_emailINPUT.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUp_emailINPUT.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.signUp_emailINPUT.TabIndex = 3;
             this.signUp_emailINPUT.Text = "Email";
@@ -497,7 +500,7 @@
             this.signUp_lnameINPUT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.signUp_lnameINPUT.Location = new System.Drawing.Point(228, 129);
             this.signUp_lnameINPUT.Name = "signUp_lnameINPUT";
-            this.signUp_lnameINPUT.Size = new System.Drawing.Size(160, 43);
+            this.signUp_lnameINPUT.Size = new System.Drawing.Size(160, 37);
             this.signUp_lnameINPUT.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
             this.signUp_lnameINPUT.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
             this.signUp_lnameINPUT.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -506,7 +509,7 @@
             this.signUp_lnameINPUT.StateCommon.Border.Rounding = 4;
             this.signUp_lnameINPUT.StateCommon.Border.Width = 1;
             this.signUp_lnameINPUT.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.signUp_lnameINPUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp_lnameINPUT.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUp_lnameINPUT.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.signUp_lnameINPUT.TabIndex = 2;
             this.signUp_lnameINPUT.Text = "Last Name";
@@ -565,13 +568,13 @@
             // 
             this.uname2_tooltip.Location = new System.Drawing.Point(73, 118);
             this.uname2_tooltip.Name = "uname2_tooltip";
-            this.uname2_tooltip.Size = new System.Drawing.Size(75, 26);
+            this.uname2_tooltip.Size = new System.Drawing.Size(75, 20);
             this.uname2_tooltip.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.uname2_tooltip.StateCommon.Border.Width = 0;
             this.uname2_tooltip.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.uname2_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uname2_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uname2_tooltip.TabIndex = 25;
             this.uname2_tooltip.Text = "Username";
             // 
@@ -579,13 +582,13 @@
             // 
             this.password2_tooltip.Location = new System.Drawing.Point(73, 172);
             this.password2_tooltip.Name = "password2_tooltip";
-            this.password2_tooltip.Size = new System.Drawing.Size(70, 26);
+            this.password2_tooltip.Size = new System.Drawing.Size(70, 20);
             this.password2_tooltip.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.password2_tooltip.StateCommon.Border.Width = 0;
             this.password2_tooltip.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.password2_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password2_tooltip.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password2_tooltip.TabIndex = 23;
             this.password2_tooltip.Text = "Password";
             // 
@@ -597,7 +600,7 @@
             this.kryptonButton8.OverrideDefault.Content.LongText.Color2 = System.Drawing.Color.White;
             this.kryptonButton8.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton8.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton8.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton8.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton8.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonButton8.Size = new System.Drawing.Size(60, 54);
             this.kryptonButton8.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -609,7 +612,7 @@
             this.kryptonButton8.StateCommon.Border.Width = 0;
             this.kryptonButton8.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonButton8.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton8.TabIndex = 18;
             this.kryptonButton8.Values.Text = "Sign Up";
             // 
@@ -623,7 +626,7 @@
             this.signIn_signinBTN.OverrideDefault.Content.LongText.Color2 = System.Drawing.Color.White;
             this.signIn_signinBTN.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.signIn_signinBTN.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.signIn_signinBTN.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signIn_signinBTN.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signIn_signinBTN.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.signIn_signinBTN.Size = new System.Drawing.Size(263, 54);
             this.signIn_signinBTN.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
@@ -635,7 +638,7 @@
             this.signIn_signinBTN.StateCommon.Border.Width = 0;
             this.signIn_signinBTN.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.signIn_signinBTN.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.signIn_signinBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signIn_signinBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signIn_signinBTN.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
             this.signIn_signinBTN.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
             this.signIn_signinBTN.TabIndex = 18;
@@ -663,7 +666,7 @@
             this.signIn_signUpBTN.StateCommon.Border.Width = 1;
             this.signIn_signUpBTN.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             this.signIn_signUpBTN.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
-            this.signIn_signUpBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signIn_signUpBTN.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signIn_signUpBTN.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             this.signIn_signUpBTN.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             this.signIn_signUpBTN.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -702,7 +705,7 @@
             // 
             this.signIn_passwordINPUT.Location = new System.Drawing.Point(68, 184);
             this.signIn_passwordINPUT.Name = "signIn_passwordINPUT";
-            this.signIn_passwordINPUT.Size = new System.Drawing.Size(329, 43);
+            this.signIn_passwordINPUT.Size = new System.Drawing.Size(329, 37);
             this.signIn_passwordINPUT.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
             this.signIn_passwordINPUT.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
             this.signIn_passwordINPUT.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -711,7 +714,7 @@
             this.signIn_passwordINPUT.StateCommon.Border.Rounding = 4;
             this.signIn_passwordINPUT.StateCommon.Border.Width = 1;
             this.signIn_passwordINPUT.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.signIn_passwordINPUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signIn_passwordINPUT.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signIn_passwordINPUT.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.signIn_passwordINPUT.TabIndex = 4;
             this.signIn_passwordINPUT.Text = "Password";
@@ -722,7 +725,7 @@
             // 
             this.signIn_usernameINPUT.Location = new System.Drawing.Point(68, 129);
             this.signIn_usernameINPUT.Name = "signIn_usernameINPUT";
-            this.signIn_usernameINPUT.Size = new System.Drawing.Size(329, 43);
+            this.signIn_usernameINPUT.Size = new System.Drawing.Size(329, 37);
             this.signIn_usernameINPUT.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
             this.signIn_usernameINPUT.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
             this.signIn_usernameINPUT.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -731,7 +734,7 @@
             this.signIn_usernameINPUT.StateCommon.Border.Rounding = 4;
             this.signIn_usernameINPUT.StateCommon.Border.Width = 1;
             this.signIn_usernameINPUT.StateCommon.Content.Color1 = System.Drawing.Color.Silver;
-            this.signIn_usernameINPUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signIn_usernameINPUT.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signIn_usernameINPUT.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10);
             this.signIn_usernameINPUT.TabIndex = 3;
             this.signIn_usernameINPUT.Text = "Username";
@@ -758,6 +761,16 @@
             this.close_BTN.TabIndex = 16;
             this.close_BTN.TabStop = false;
             this.close_BTN.Click += new System.EventHandler(this.close_BTN_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(63, 342);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(325, 5);
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
             // 
             // SignIn_UpPage
             // 
@@ -790,6 +803,7 @@
             this.SignInForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.signIn_showPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.close_BTN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -830,6 +844,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox password2_tooltip;
         private System.Windows.Forms.PictureBox sinUp_showPassword;
         private System.Windows.Forms.PictureBox signIn_showPassword;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
