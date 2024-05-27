@@ -34,5 +34,17 @@ namespace TeachersClassRecord
             }
             else return;
         }
+
+        private void testkryptonButton3_Click(object sender, EventArgs e)
+        {
+            SignIn_UpPage signIn_UpPage = new SignIn_UpPage();
+            var respond = MessageBox.Show("Lorem Ipsum?", "dolor sit amet", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            if (respond == DialogResult.Yes)
+            {
+                signIn_UpPage.Show();
+                this.Hide();
+            }
+            else return;
+        }
     }
 }
